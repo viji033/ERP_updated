@@ -1,0 +1,190 @@
+.navbar {
+  padding: 10px 20px;
+  cursor: pointer !important;
+  height: 90px;
+  background-color: #090249 !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link.login {
+  cursor: pointer !important;
+}
+
+/* Logo Styling */
+.logo-img {
+  height: 60px;
+  width: auto; /* Ensures proportional scaling */
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: white !important;
+  transition: color 0.3s ease-in-out;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: gold !important;
+  font-weight: bold;
+  border-bottom: 2px solid gold;
+}
+
+.nav-link:hover {
+  color: gold !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  min-width: 140px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  padding: 8px 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Show dropdown when active */
+.dropdown-menu.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  font-size: 15px;
+  color: black;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 12px 20px;
+  border-radius: 6px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: gold;
+  color: white;
+  font-weight: bold;
+}
+
+/* Ensure dropdown container has relative positioning */
+.nav-item.dropdown {
+  position: relative;
+}
+
+/* Account Button */
+.account-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.account-btn:hover {
+  color: gold;
+}
+
+/* Mobile Toggle Button */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 992px) {
+  .navbar {
+    height: auto;
+    padding: 15px;
+  }
+
+  .container-fluid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    padding-top: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+    margin-top: 5px;
+  }
+
+  .nav-item.dropdown {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+}

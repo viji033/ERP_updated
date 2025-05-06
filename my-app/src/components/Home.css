@@ -1,0 +1,242 @@
+/* ===== Global Styles ===== */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home {
+  background-color: #f8f9fa;
+}
+
+/* ===== Carousel Section ===== */
+.carousel-section {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  
+  transition: transform 0.5s ease-in-out;
+  filter: brightness(50%);
+}
+
+.slide-container {
+  position: relative;
+  padding: 0;
+  
+}
+
+/* ===== Left-Side Text Overlay ===== */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  text-align: left;
+  width: 40%;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+.text-overlay p1{
+  color: gold !important;
+  font-size: 25px
+}
+
+.text-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white !important;
+  text-align: left;
+  font-family: 'Varela Round',sans-serif; /* White */
+}
+
+.text-overlay h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffc107 !important; /* Gold */
+}
+
+.text-overlay p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white !important;
+}
+
+/* ===== Apply Now Button ===== */
+.apply-btn {
+  display: inline-block;
+  background-color: #ffc107; /* Gold Color */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: 2px solid #e6a700; /* Slightly Darker Gold Border */
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.apply-btn:hover {
+  background-color: #e6a700; /* Darker Gold on Hover */
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 193, 7, 0.5);
+}
+
+/* ===== Faculty Section ===== */
+.faculty-section {
+  padding: 50px 0;
+}
+
+.faculty-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: gold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Faculty Cards */
+.faculty-card {
+  background: #ffffff;
+  border-left: 5px solid #ffc107;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 20px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faculty-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 86, 179, 0.3);
+}
+
+/* ===== Alumni Section ===== */
+.alumni-section {
+  padding: 50px 0;
+}
+/* Faculty Names - Gold Color */
+.faculty-card p.fw-bold {
+  color: gold !important;
+}
+
+
+.alumni-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffc107;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Alumni Cards */
+.alumni-card {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  height: 280px;
+  border-radius: 8px;
+  border: 2px solid #ffc107;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.alumni-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+/* Alumni Images */
+.alumni-image {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  border: 4px solid #ffc107;
+  transition: transform 0.3s ease-in-out;
+}
+
+.alumni-image:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 1024px) {
+  .carousel-image {
+    height: 400px;
+  }
+
+  .text-overlay {
+    width: 50%;
+  }
+
+  .text-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .text-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-overlay p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 350px;
+  }
+
+  .text-overlay {
+    width: 60%;
+  }
+
+  .text-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-overlay h2 {
+    font-size: 1.3rem;
+  }
+
+  .text-overlay p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-image {
+    height: 250px;
+  }
+
+  .text-overlay {
+    width: 80%;
+  }
+
+  .text-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .text-overlay p {
+    font-size: 0.8rem;
+  }
+}
