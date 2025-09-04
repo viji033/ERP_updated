@@ -11,11 +11,18 @@
     "dev": "node --watch --trace-warnings --env-file=.env index.js"
   },
   "dependencies": {
+<<<<<<< HEAD
     "bcryptjs": "^3.0.2",
+=======
+>>>>>>> e0c0e1e6d6b93eaf86b7db393a49f476ae26bd95
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "helmet": "^8.1.0",
+<<<<<<< HEAD
     "mongoose": "^8.18.0"
+=======
+    "mongoose": "^8.14.1"
+>>>>>>> e0c0e1e6d6b93eaf86b7db393a49f476ae26bd95
   }
 }
