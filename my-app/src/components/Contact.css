@@ -1,0 +1,50 @@
+.page-header {
+    
+    text-align: center;
+  }
+  
+  .icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  
+  .contact-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .btn-primary {
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background: #0056b3;
+  }
+  /* Increase Section Title Size */
+/* Remove Background from 'Contact Us' */
+.section-title {
+  background: none !important; /* Removes background */
+  font-size: 40px; /* Adjust size if needed */ /* Optional: Keep a blue color for distinction */
+}
+
+/* Change 'Contact For Any Query' text color to black */
+h1 {
+  font-size: 43px; /* Adjust as needed */
+  color: black !important; /* Force black text color */
+  font-weight: bold;
+}
+
+
+h5 {
+  font-size: 18px; /* Increase size for section subtitles */
+}
